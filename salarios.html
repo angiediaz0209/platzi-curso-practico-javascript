@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./salarios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&family=Martel+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Salarios</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Salarios</h1>
+    </header>
+    <main>
+      <section class="container">
+        <form action="" class="form">
+          <h2>
+            Calcular Promedio
+          </h2> 
+          <label for="InputListaPromedio">Ingrese los datos</label>
+          <input id="InputListaPromedio" type="text" placeholder="Ej: 1,2,3..">
+          <button onclick="calcularMediaAritmetica()" type="button">Calcular</button>
+          <p id="ResultPromedio"></p>
+        </form>
+      </section>
+
+      <section class="container">
+        <form action="" class="form">
+          <h2>
+            Calcular Mediana
+          </h2> 
+          <label for="InputListaMediana">Ingrese los datos</label>
+          <input id="InputListaMediana" type="text" placeholder="Ej: 1,2,3..">
+          <button onclick="calcularMediana()" type="button">Calcular</button>
+          <p id="ResultMediana"></p>
+        </form>
+      </section>
+      
+      <section class="container">
+        <form action="" class="form">
+          <h2>
+            Calcular moda
+          </h2> 
+          <label for="InputListaModa">Ingrese los datos</label>
+          <input id="InputListaModa" type="text" placeholder="Ej: 1,2,3..">
+          <button onclick="calcularModa()" type="button">Calcular</button>
+          <p id="ResultModa"></p>
+        </form>
+      </section>
+
+
+
+    </main>
+    
+  </main>
+
+
+  <script src="./salarios.js"></script>
+  <script src="./analisis.js"></script>
+</body>
+
+</html>

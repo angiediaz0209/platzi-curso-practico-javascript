@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="descuentos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&family=Martel+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Porcentajes y descuentos</title>
+</head>
+<body>
+  <header>
+    <h1>Precios y descuentos</h1>
+  </header>
+  <main>
+    <section class="container">
+      <h2>
+        Calcula el porcentaje de descuento
+      </h2>
+      <form action="">
+        <label for="InputPrecio">
+          Ingresa el precio
+        </label>
+        <input id="InputPrecio" type="number">
+
+        <label for="InputDescuento">
+          Ingresa el descuento
+        </label>
+        <input id="InputDescuento" type="number">
+        <div>
+          <button type="button" onclick="calcularPorcentajeDescuento()">
+            Calcular porcentaje descuento
+          </button>
+        </div>
+        <p id="ResultPricePorcentajeDeDescuento"></p>
+      </form>
+    </section>
+
+    <section class="container">
+      <h2>
+        Calcula el precio a pagar con descuento
+      </h2>
+      <form action="">
+        <label for="InputPrecioConDescuento">
+          Ingresa el precio
+        </label>
+        <input id="InputPrecioConDescuento" type="number">
+        <label for="InputPorcentajeDescuento">
+          Ingresa el porcentaje de descuento
+        </label>
+        <input id="InputPorcentajeDescuento" type="number">
+        <div>
+          <button type="button" onclick="calcularPrecioConDescuento()">
+            Calcular precio con descuento
+          </button>
+        </div>
+        <p id="ResultPriceDescuento"></p>
+      </form>
+    </section>
+
+    <section class="container">
+      <h2>
+        Calcula el precio a pagar con cupón de descuento
+      </h2>
+      <form action="">
+        <label for="InputPrecioCupon">
+          Ingresa el precio
+        </label>
+        <input id="InputPrecioCupon" type="number">
+        <label for="InputCoupon">
+          Ingresa el cupon de descuento
+        </label>
+        <input id="InputCoupon" type="text">
+        <div>
+          <button type="button" onclick="onClickButtonPriceDiscount()">
+            Aplicar cupón de descuento
+          </button>
+        </div>
+        <p id="ResultPriceCupon"></p>
+      </form>
+    </section>
+  </main>
+
+
+  <script src="./descuentos.js"></script>
+</body>
+</html>
